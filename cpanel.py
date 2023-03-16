@@ -38,8 +38,7 @@ def start_app(port):
     # Send data 
     try: 
         # Send data 
-        message = "Test message. This will be 
-                   echoed" 
+        message = "Test message. This will be echoed" 
         print ("Sending %s" % message) 
         sock.sendall(message.encode('utf-8')) 
         # Look for the response 
@@ -58,8 +57,7 @@ def start_app(port):
         sock.close() 
      
 if __name__ == '__main__': 
-    parser = argparse.ArgumentParser
-            (description='Socket Server Example') 
+    parser = argparse.ArgumentParser(description='Socket Server Example') 
     parser.add_argument('--port', action="store", 
 dest="port", type=int, required=True) 
     given_args = parser.parse_args()  
